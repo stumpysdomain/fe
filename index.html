@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Spring Project - Hiking</title>
+</head>
+<h1>Welcome to the Hiking Database!</h1>
+<main>
+    <h2>Create a new Hill Entry</h2>
+    <section id="hillForm">
+
+        <form id="getOutput">
+            <label class="form-label" for="ID">ID:</label>
+            <input class="form-control" type="number" name="ID" id="ID">
+
+            <label class="form-label" for="mountain_name">Mountain Name:</label>
+            <input class="form-control" type="text" name="mountain_name" id="mountain_name">
+
+            <label class="form-label" for="region">Region:</label>
+            <input class="form-control" type="text" name="region" id="region">
+
+            <label class="form-label" for="height">Height:</label>
+            <input class="form-control" type="number" name="height" id="height">
+
+            <label class="form-label" for="country">:</label>
+            <select class="form-control" type="text" name="country" id="country">
+                <option value="" selected>Which country?</option>
+                <option value="England"> England</option>
+                <option value="Wales">Wales</option>
+                <option value="Scotland">Scotland</option>
+            </select>
+
+            <button class="btn btn-warning" type="reset">Reset</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+
+        </form>
+
+    </section>
+
+    <section>
+        <h2>Delete Hills</h2>
+        <form id="deleteform">
+            <label class="form-label" for="id">ID</label>
+            <input class="form-control" type="text" name="id" id="id">
+            <button class="btn btn-danger">DELETE</button>
+        </form>
+
+
+
+    </section>
+
+    <section>
+        <h2>Get Hills</h2>
+        <div id="getOutput">
+        </div>
+    </section>
+
+</main>
+
+<body>
+    <script src="./frontend.js"></script>
+</body>
+
+</html>
